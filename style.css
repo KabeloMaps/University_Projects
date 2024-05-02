@@ -1,0 +1,317 @@
+
+* { 
+  box-sizing: border-box;
+}
+
+
+ 
+body {
+
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body, html {
+  height: 85%;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero\ and\ banner/Hero002.jpg");
+  height: 65%;
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+       
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: center; 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row; 
+   height: 300x; 
+
+
+}
+
+   /* Mobile phones with min-with of 48opx and tablest with a max-width of 768px */
+   @media (min-width: 480px) and (max-width: 767px){
+  .flex-container {
+    flex-direction: column;
+    letter-spacing: .02rem;
+  }
+}
+
+
+div.flex-container {
+  background-color: #fffefe;
+  overflow: auto;
+  white-space: nowrap;
+  object-fit: cover; 
+  padding-left: 0;
+  margin: 45px;
+ 
+}
+ 
+div.flex-container img {
+  padding: 10px;
+  width: 659px; 
+  height: 300px; 
+}
+ 
+div.gallery {
+  border: 1px solid #ccc;
+}
+ 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+ 
+div.gallery img {
+  
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+ 
+ 
+ 
+.footer {
+ background-color: #5c656d;
+ padding: 50px 0;
+ color: rgb(51, 65, 139);
+ text-align: center;
+ clear: both;
+ position: relative;
+ width: 100%;
+}
+
+.footer .container {
+ display: flex;
+ justify-content: center;
+ align-items: center; /* Center vertically */
+ flex-wrap: wrap;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+}
+
+.footer-col {
+ flex: 1;
+ text-align: center; /* Center horizontally */
+ padding: 0 20px;
+}
+
+.row {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+     .footer h4 {
+       color: white;
+       font-size: 18px;
+       margin-bottom: 15px;
+     }
+
+     .footer ul {
+       list-style-type: none;
+       padding: 0;
+       margin: 0;
+     }
+
+     .footer ul li {
+       margin-bottom: 10px;
+     }
+
+     .footer ul li a {
+       color: white;
+       text-decoration: none;
+       font-size: 16px;
+     }
+
+     .footer p {
+       margin-top: 20px;
+       font-size: 14px;
+     }
+
+.h1{
+
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 20px;
+ line-height: 2%;
+ color: 55px;
+}
+ 
+
+.h2{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 10px;
+   line-height: 5%;
+   color: #273139;
+   text-align: center;
+}
+
+
+
+
+
+.responsive {
+ width: 100%;
+ height: auto;
+}
+
+
+.banner {
+         background-color: #7c7255;
+         color: rgb(100, 69, 69);
+         text-align: center;
+         padding: 2px 10;
+         position: static;
+         top: 0;
+         width: 100%;
+         
+         z-index: 1000;
+         
+
+
+       }
+#product1{
+ text-align: center;
+}
+
+#product1 .pro{
+ width: 25%;
+ min-width: 250px;
+ padding: 10px 12px;
+ border: 1px solid #e9e9e9;
+
+}
+
+
+.responsive  {
+ padding: 0 6px;
+ float: left;
+ width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+ .responsive {
+   width: 49.99999%;
+   margin: 6px 0;
+ }
+}
+
+@media only screen and (max-width: 500px) {
+ .responsive {
+   width: 100%;
+ }
+}
+
+
+
+
+.clearfix:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+         display: inline-block;
+         color: black;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+}
+       
+.topnav a:hover {
+         background-color: #ddd;
+         color: black;
+}
+       
+.topnav a.active {
+         background-color: #2196F3;
+         color: rgb(0, 0, 0);
+}
+       
+.topnav .search-container {
+         float: right;
+}
+       
+.topnav input[type=text] {
+         padding: 6px;
+         margin-top: 8px;
+         font-size: 17px;
+         border: none;
+}
+       
+.topnav .search-container button {
+         float: right;
+         padding: 6px 10px;
+         margin-top: 8px;
+         margin-right: 16px;
+         background: #ddd;
+         font-size: 17px;
+         border: none;
+         cursor: pointer;
+}
+       
+
+.topnav .search-container button:hover {
+         background: #ccc;
+}
+
+       
+@media screen and (max-width: 600px) {
+         .topnav .search-container  {
+           float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+           float: none;
+           display: block;
+           text-align: left;
+           width: 100%;
+           margin: 0;
+           padding: 14px;
+}
+.topnav input[type=text] {
+           border: 1px solid #ccc;  
+}
+ 
+
+
+
+
+
+
+}
